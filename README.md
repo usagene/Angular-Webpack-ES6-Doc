@@ -9,7 +9,7 @@ npm install babel-core babel-loader --save-dev
 
 # Migration strategy
 1. Pick a system module to convert into ES6
-2. Create a module-level export file, called it 'myModule.es6.js', note that ".es6" is part of the file name, it is useful for filtering these files from unit testing, bundling perspectives.
+2. Create a module-level export file, call it 'myModule.es6.js', note that ".es6" is part of the file name, it is useful for filtering these files from unit testing, bundling perspectives.
 3. Pick an existing ES5 file, say "a.js" and convert it into ES6 module with the same file naming convention, so the new file is "a.es6.js".
 4. import that file into myModule.es6.js, then register the export object from a.js into Angular. Example code as following:
     import a from './a.es6';
